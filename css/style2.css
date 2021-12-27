@@ -1,0 +1,191 @@
+/* GLOBAL STYLES */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    padding: 0 1.5rem;
+    background-color: black;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+/* SECTION 1 */
+#section-1 {
+    padding: 3rem;
+    width: 100%;
+    color: #fafafa;
+    margin-bottom: 1rem;
+    border-bottom: 0.25rem solid #fafafa;
+}
+
+.movie-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#movie-image {
+    margin-right: 5rem;
+    margin-bottom: 1rem;
+}
+
+
+#movie-image img {
+    width: 30rem;
+    max-width: 40rem;
+}
+
+#movie-detail {
+    display: inline-block;
+    width: 60rem;
+    max-width: 100rem;
+}
+
+#movie-detail p {
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+#movie-detail h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.category-list {
+    list-style: none;
+}
+
+.category-list li {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    display: inline;
+}
+
+
+
+
+
+/* SECTION 2 */
+#section-2 {
+    padding: 3rem;
+    width: 100%;
+    color: #fafafa;
+    margin-bottom: 1rem;
+}
+
+#trailer {
+    margin-bottom: 5rem;
+}
+
+#trailer h2 {
+    text-transform: uppercase;
+    max-width: 30%;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+#trailer video {
+    max-height: 60vh;
+    max-width: 100%;
+}
+
+
+
+
+/* SECTION-3 */
+#download {
+    margin: 0 5rem;
+}
+
+#download h3 {
+    margin: 2rem 0;
+}
+
+#download button {
+    margin-right: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+#download button a {
+    color: #333;
+}
+
+
+
+
+
+/* SECTION 3 */
+#section-3 {
+    margin: 1rem 0 10rem 0;
+}
+
+
+.category {
+    padding-left: 3rem;
+    font-weight: bold;
+    margin: 3rem 0;
+}
+
+.movie-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.movie {
+    width: 25rem;
+    margin-bottom: 2rem;
+}
+
+.movie img {
+    display: block;
+}
+
+.movie p {
+    background-color: #333;
+    font-size: 1.6rem;
+    font-weight: bold;
+    max-width: 100%;
+    padding-left: 0.5rem;
+}
+
+
+
+
+
+/* FOOTER */
+footer {
+    font-size: 1.4rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
