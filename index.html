@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Legacies_Movies</title>
+    <title>Movie site project</title>
 </head>
 <body>
     <header>
         <div id="logo-box">
-        <img src="images/logo.png" alt="Logo">
+        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
         </div>
     
         <form action="" method="GET" id="search">
-        <input name="text" type="search" placeholder="Search..." class="input"><i class="fa fa-search" onclick="click()"></i>
+        <input name="text" type="search" placeholder="Search movie..." class="input">
+        <button id="search-btn"><i class="fa fa-search"></i></button>
         </form>
 
         <ul id="nav-list">
-            <li><a href="#">Register</a></li>
-            <li><a href="#">Login</a></li>
+            <div id="close">
+                <i class="fas fa-times fa-2x"></i>
+            </div>
+            <li><a href="#" style="font-weight: bold;">Login</a></li>
             <li id="genre" class="drop-down-box">
                     <button class="btn">
                         Genre
@@ -71,183 +74,149 @@
     </header>
 
 
-
-
-
-
     <main>
         <!--                 SECTION 1                    -->
     <section class="section-1">
-        <img src="images/AssassinsCreedIII.jpg" alt="Movie image" class="header-image" width="100%" height="350px">
     </section>
-
-
-
-
 
 
     <section class="section-2">
         <h2 class="category">Latest Movies</h2>
         <div class="movie-row">
-        <div class="movie">
-            <a href="#">
-            <img src="images/FF9.jpg" alt="movie thumbnail">
-            <p>Fast & Furious 9</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="#">
-            <img src="images/zack-snyders-justice-league.jpg" alt="movie thumbnail">
-            <p>Zack snyders justice league</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="#">
-            <img src="images/luca1.jpg" alt="movie thumbnail">
-            <p>Luca</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="movie_detail.html">
-            <img src="images/godzilla-vs-king-kong.jpg" alt="movie thumbnail">
-            <p>Godzilla vs Kong</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="#">
-            <img src="images/AVENGERS-ENDGAME.jpg" alt="movie thumbnail">
-            <p>Avengers Endgame</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="#">
-            <img src="images/Mortal_Kombat.jpg" alt="movie thumbnail">
-            <p>Mortal Combat</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="#">
-            <img src="images/Wrath-of-man.jpg" alt="movie thumbnail">
-            <p>Wrath Of Man</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="#">
-            <img src="images/coming-to-america.jpg" alt="movie thumbnail">
-            <p>Coming To America 2</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="#">
-            <img src="images/Waterman.jpg" alt="movie thumbnail">
-            <p>The Waterman</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="#">
-            <img src="images/To_all_the_boys_always_and_forever.jpg" alt="movie thumbnail">
-            <p>To All The Boys Always And Forever</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="#">
-            <img src="images/Black_widow.jpg" alt="movie thumbnail">
-            <p>Black Widow</p>
-            </a>
+            <div class="movie">
+                <a href="movie_detail.html">
+                <img src="images/avengers.jpg" alt="movie thumbnail">
+                <p>Avengers: Endgame</p>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="movie_detail.html">
+                <img src="images/SquidGame.jpg" alt="movie thumbnail">
+                <p>Squid Game</p>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="movie_detail.html">
+                <img src="images/Kissing-Booth.jpg" alt="movie thumbnail">
+                <p>Kissing Booth</p>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="movie_detail.html">
+                <img src="images/moana.jpeg" alt="movie thumbnail">
+                <p>Moana</p>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="movie_detail.html">
+                <img src="images/spiderman.jpg" alt="movie thumbnail">
+                <p>Spiderman: Far From Home</p>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="movie_detail.html">
+                <img src="images/assassins-creed.jpg" alt="movie thumbnail">
+                <p>Assassins Creed: Rogue</p>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="movie_detail.html">
+                <img src="images/ff9.jpg" alt="movie thumbnail">
+                <p>Fast & Furious 9</p>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="movie_detail.html">
+                <img src="images/justice_league.jpg" alt="movie thumbnail">
+                <p>Zack Synder's Justice League</p>
+                </a>
+            </div>
         </div>
     </section>
-
-
-
-
-
 
 
     <section class="section-2">
         <h2 class="category">Most Viewed Movies</h2>
         <div class="movie-row">
-        <div class="movie">
-            <a href="#">
-            <img src="images/FF9.jpg" alt="movie thumbnail">
-            <p>Fast & Furious 9</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="#">
-            <img src="images/The_Last_Airbender_Poster.png" alt="movie thumbnail">
-            <p>The Last Airbender</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="#">
-            <img src="images/avatar1.jpg" alt="movie thumbnail">
-            <p>Avatar: Last airbender</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="">
-            <img src="images/batman.jpg" alt="movie thumbnail">
-            <p>The Dark Knight</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="#">
-            <img src="images/AVENGERS-ENDGAME.jpg" alt="movie thumbnail">
-            <p>Avengers Endgame</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="#">
-            <img src="images/conan-the-barbarian.jpg" alt="movie thumbnail">
-            <p>Conan The Babarian</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="#">
-            <img src="images/Spider_Man_Homecoming.jpg" alt="movie thumbnail">
-            <p>Spiderman: Homecoming</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="#">
-            <img src="images/zack-snyders-justice-league.jpg" alt="movie thumbnail">
-            <p>Zack Synder's Justice League</p>
-            </a>
+            <div class="movie">
+                <a href="movie_detail.html">
+                <img src="images/avengers.jpg" alt="movie thumbnail">
+                <p>Avengers: Endgame</p>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="movie_detail.html">
+                <img src="images/SquidGame.jpg" alt="movie thumbnail">
+                <p>Squid Game</p>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="movie_detail.html">
+                <img src="images/Kissing-Booth.jpg" alt="movie thumbnail">
+                <p>Kissing Booth</p>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="movie_detail.html">
+                <img src="images/moana.jpeg" alt="movie thumbnail">
+                <p>Moana</p>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="movie_detail.html">
+                <img src="images/spiderman.jpg" alt="movie thumbnail">
+                <p>Spiderman: Far From Home</p>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="movie_detail.html">
+                <img src="images/assassins-creed.jpg" alt="movie thumbnail">
+                <p>Assassins Creed: Rogue</p>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="movie_detail.html">
+                <img src="images/ff9.jpg" alt="movie thumbnail">
+                <p>Fast & Furious 9</p>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="movie_detail.html">
+                <img src="images/justice_league.jpg" alt="movie thumbnail">
+                <p>Zack Synder's Justice League</p>
+                </a>
+            </div>
         </div>
     </section>
-
-
-
-
-
 
 
     <section class="section-2">
         <h2 class="category">All Time Rated</h2>
         <div class="movie-row">
         <div class="movie">
-            <a href="#">
-            <img src="images/Star_wars.jpg" alt="movie thumbnail">
-            <p>Star Wars</p>
+            <a href="movie_detail.html">
+            <img src="images/ff9.jpg" alt="movie thumbnail">
+            <p>Fast & Furious 9</p>
             </a>
         </div>
         <div class="movie">
-            <a href="#">
-            <img src="images/The_Last_Airbender_Poster.png" alt="movie thumbnail">
-            <p>The Last Airbender</p>
+            <a href="movie_detail.html">
+            <img src="images/avengers.jpg" alt="movie thumbnail">
+            <p>Avengers: Endgame</p>
             </a>
         </div>
         <div class="movie">
-            <a href="#">
-            <img src="images/half-blood-prince.jpg" alt="movie thumbnail">
-            <p>Harry Potter And The Half Blood Prince</p>
+            <a href="movie_detail.html">
+            <img src="images/spiderman.jpg" alt="movie thumbnail">
+            <p>Spiderman: Far From Home</p>
             </a>
         </div>
         <div class="movie">
-            <a href="#">
-            <img src="images/AVENGERS-ENDGAME.jpg" alt="movie thumbnail">
-            <p>Avengers: End Game</p>
+            <a href="movie_detail.html">
+            <img src="images/justice_league.jpg" alt="movie thumbnail">
+            <p>Zack Synder's Justice League</p>
             </a>
+        </div>
         </div>
     </section>
     </main>

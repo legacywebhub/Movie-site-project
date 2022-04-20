@@ -14,7 +14,9 @@ html {
 body {
     font-size: 1.6rem;
     padding: 0 1.5rem;
-    background-color: black;
+    font-family: cursive;
+    font-weight: 100;
+    background-color: rgba(0, 0, 0, 0.904);
     color: #fff;
 }
 
@@ -62,6 +64,13 @@ header {
     color: #fafafa;
 }
 
+#search-btn {
+padding: .5rem;
+color: #fafafa;
+background-color: #333;
+font-size: 16px;
+}
+
 #nav-list {
     list-style: none;
     display: inline-block;
@@ -79,6 +88,11 @@ header {
     padding: 0.5rem 1rem;
     font-weight: bold;
     
+}
+
+#close {
+    display: inline-block;
+    display: none;
 }
 
 .drop-down-box {
@@ -146,6 +160,18 @@ section {
     margin-bottom: 3rem;
 }
 
+.section-1 {
+    width: 100%;
+    height: 70vh;
+    background:linear-gradient(135deg,
+    rgba(51, 51, 51, 0.5) 0%,
+    rgba(26, 17, 17, 0.5) 100%),
+    url('../images/AssassinsCreedIII.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+}
+
 .category {
     padding-left: 3rem;
     font-weight: bold;
@@ -162,14 +188,14 @@ section {
 }
 
 .movie {
-    width: 25rem;
+    width: 30rem;
     margin-bottom: 2rem;
 }
 
 .movie img {
     display: block;
     width: 100%;
-    height: 250px;
+    height: 40%;
     transition: all .3s ease-out;
 }
 
@@ -178,6 +204,7 @@ section {
 }
 
 .movie p {
+    text-transform: capitalize;
     background-color: #333;
     font-size: 1.7rem;
     font-weight: bold;
@@ -189,13 +216,14 @@ section {
     padding: 1rem;
     opacity: .7;
     position: fixed;
-    top: 45rem;
+    top: 80vh;
     right: 2rem;
     visibility: hidden;
 }
 
 footer {
     font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
     background-color: #333;
     color: white;
     text-align: center;
@@ -215,7 +243,32 @@ footer {
     }
 
     #nav-list {
-        display: none;
+        width: 25rem;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.850);
+        font-size: 20px;
+        position: fixed;
+        top: 0;
+        right: -250rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nav-list li {
+        margin: 1rem 0;
+    }
+
+    #close {
+        display: inline-block;
+        position: absolute;
+        top: 5rem;
+        left: 3rem;
+    }
+
+    .sub-list {
+        z-index: 1000;
     }
 
     #search {
@@ -231,13 +284,10 @@ footer {
         margin-right: 2rem;
     }
 
-    .fa-search {
+    #search-btn {
         position: absolute;
-        top: 0.5rem;
         right: 2.5rem;
         padding-left: 1rem;
-        font-size: 2.5rem;
-        background-color: #000;
         border-radius: 50%;
         padding: 0.5rem;
     }
@@ -246,4 +296,16 @@ footer {
         display: contents;
     }
 
+}
+
+
+@media screen and (max-width: 450px) {
+    .section-1 { 
+        background:linear-gradient(135deg,
+        rgba(51, 51, 51, 0.5) 0%,
+        rgba(233, 2, 2, 0.5) 100%),
+        url('../images/spiderman.jpg');
+        background-size: cover;
+        background-position: left center;
+    }
 }
