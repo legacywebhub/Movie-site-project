@@ -4,219 +4,215 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Movie site project</title>
+    <title>Movie site project | Legacy Tech</title>
 </head>
 <body>
     <header>
-        <div id="logo-box">
-        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
-        </div>
-    
-        <form action="" method="GET" id="search">
-        <input name="text" type="search" placeholder="Search movie..." class="input">
-        <button id="search-btn"><i class="fa fa-search"></i></button>
-        </form>
+        <div class="container">
+            <nav>
+                <div id="logo-box">
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                </div>
+            
+                <form action="" method="GET" id="search">
+                <input name="text" type="search" placeholder="Search..." class="input" maxlength="25">
+                <button id="search-btn"><i class="fa fa-search"></i></button>
+                </form>
+        
+                <ul id="nav-list">
+                    <div id="close">
+                        <i class="fas fa-times fa-2x"></i>
+                    </div>
+                    <li><a href="#" style="font-weight: bold;">Login</a></li>
+                    <li id="genre" class="drop-down-box">
+                            <button class="btn">
+                                Genre
+                                <i class="fas fa-caret-down"></i>
+                            </button>
+                            <ul class="sub-list" id="genre-list">
+                                <li class="sub-link"><a href="#">Action</a><hr></li>
+                                <li class="sub-link"><a href="#">Sci-fi</a><hr></li>
+                                <li class="sub-link"><a href="#">Animated</a><hr></li>
+                                <li class="sub-link"><a href="#">Romance</a><hr></li>
+                                <li class="sub-link"><a href="#">Horror</a><hr></li>
+                                <li class="sub-link"><a href="#">Comedy</a><hr></li>
+                                <li class="sub-link"><a href="#">Tragedy</a><hr></li>        
+                            </ul>
+                    </li>
+        
+                    <li id="language" class="drop-down-box">
+                        <button class="btn">
+                            Language
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <ul class="sub-list" id="language-list">
+                            <li class="sub-link"><a href="#">English</a><hr></li>
+                            <li class="sub-link"><a href="#">French</a><hr></li>
+                            <li class="sub-link"><a href="#">Spanish</a><hr></li>
+                            <li class="sub-link"><a href="#">Portugese</a><hr></li>
+                            <li class="sub-link"><a href="#">Korean</a><hr></li>         
+                        </ul>
+                    </li>
+                </ul>
+        
+                <div id="menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
 
-        <ul id="nav-list">
-            <div id="close">
-                <i class="fas fa-times fa-2x"></i>
+            <div id="header-text">
+                <h1><span id="legacy">Legacy</span> Movies</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque aspernatur suscipitiure dolorum voluptatum tempora.</p>
             </div>
-            <li><a href="#" style="font-weight: bold;">Login</a></li>
-            <li id="genre" class="drop-down-box">
-                    <button class="btn">
-                        Genre
-                        <i class="fas fa-caret-down"></i>
-                    </button>
-                    <ul class="sub-list" id="genre-list">
-                        <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">Action</a><hr></li>
-                        <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">Sci-fi</a><hr></li>
-                        <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">Animated</a><hr></li>
-                        <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">Romance</a><hr></li>
-                        <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">Horror</a><hr></li>
-                        <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">Comedy</a><hr></li>
-                        <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">Tragedy</a><hr></li>
-                        <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">Tragic-Comedy</a><hr></li>         
-                    </ul>
-            </li>
-
-            <li id="year" class="drop-down-box">
-                <button class="btn">
-                    Year
-                    <i class="fas fa-caret-down"></i>
-                </button>
-                <ul class="sub-list" id="year-list">
-                    <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">2021</a><hr></li>
-                    <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">2020</a><hr></li>
-                    <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">2019</a><hr></li>
-                    <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">2018</a><hr></li>          
-                </ul>
-            </li>
-
-            <li id="language" class="drop-down-box">
-                <button class="btn">
-                    Language
-                    <i class="fas fa-caret-down"></i>
-                </button>
-                <ul class="sub-list" id="language-list">
-                    <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">English</a><hr></li>
-                    <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">French</a><hr></li>
-                    <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">Spanish</a><hr></li>
-                    <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">Portugese</a><hr></li>
-                    <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">Chinese</a><hr></li>
-                    <li class="sub-link" style="margin-bottom: .3rem;"><a href="#">Korean</a><hr></li>         
-                </ul>
-            </li>
-        </ul>
-
-        <div id="menu">
-            <i class="fas fa-bars"></i>
         </div>
     </header>
 
 
     <main>
         <!--                 SECTION 1                    -->
-    <section class="section-1">
-    </section>
-
-
-    <section class="section-2">
-        <h2 class="category">Latest Movies</h2>
-        <div class="movie-row">
-            <div class="movie">
-                <a href="movie_detail.html">
-                <img src="images/avengers.jpg" alt="movie thumbnail">
-                <p>Avengers: Endgame</p>
-                </a>
-            </div>
-            <div class="movie">
-                <a href="movie_detail.html">
-                <img src="images/SquidGame.jpg" alt="movie thumbnail">
-                <p>Squid Game</p>
-                </a>
-            </div>
-            <div class="movie">
-                <a href="movie_detail.html">
-                <img src="images/Kissing-Booth.jpg" alt="movie thumbnail">
-                <p>Kissing Booth</p>
-                </a>
-            </div>
-            <div class="movie">
-                <a href="movie_detail.html">
-                <img src="images/moana.jpeg" alt="movie thumbnail">
-                <p>Moana</p>
-                </a>
-            </div>
-            <div class="movie">
-                <a href="movie_detail.html">
-                <img src="images/spiderman.jpg" alt="movie thumbnail">
-                <p>Spiderman: Far From Home</p>
-                </a>
-            </div>
-            <div class="movie">
-                <a href="movie_detail.html">
-                <img src="images/assassins-creed.jpg" alt="movie thumbnail">
-                <p>Assassins Creed: Rogue</p>
-                </a>
-            </div>
-            <div class="movie">
-                <a href="movie_detail.html">
-                <img src="images/ff9.jpg" alt="movie thumbnail">
-                <p>Fast & Furious 9</p>
-                </a>
-            </div>
-            <div class="movie">
-                <a href="movie_detail.html">
-                <img src="images/justice_league.jpg" alt="movie thumbnail">
-                <p>Zack Synder's Justice League</p>
-                </a>
+    <section>
+        <div class="container">
+            <h2 class="category">Latest Movies</h2>
+            <div class="movie-row">
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/avengers.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Avengers' Endgame</span><span class="movie-rating"><i class="fas fa-star"></i> 10</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/SquidGame.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Squid Game</span><span class="movie-rating"><i class="fas fa-star"></i> 8.5</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/Kissing-Booth.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Kissing Booth</span><span class="movie-rating"><i class="fas fa-star"></i> 9.0</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/moana.jpeg" alt="movie thumbnail">
+                    <p><span class="movie-name">Moana</span><span class="movie-rating"><i class="fas fa-star"></i> 8.5</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/spiderman.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Spiderman: Far From Home</span><span class="movie-rating"><i class="fas fa-star"></i> 10</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/assassins-creed.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Assassins Creed: Rogue</span><span class="movie-rating"><i class="fas fa-star"></i> 6.2</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/ff9.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Fast & Furious 9</span><span class="movie-rating"><i class="fas fa-star"></i> 10</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/justice_league.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Zack Synder's Justice League</span><span class="movie-rating"><i class="fas fa-star"></i> 8.5</span></p>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
 
-    <section class="section-2">
-        <h2 class="category">Most Viewed Movies</h2>
-        <div class="movie-row">
-            <div class="movie">
-                <a href="movie_detail.html">
-                <img src="images/avengers.jpg" alt="movie thumbnail">
-                <p>Avengers: Endgame</p>
-                </a>
-            </div>
-            <div class="movie">
-                <a href="movie_detail.html">
-                <img src="images/SquidGame.jpg" alt="movie thumbnail">
-                <p>Squid Game</p>
-                </a>
-            </div>
-            <div class="movie">
-                <a href="movie_detail.html">
-                <img src="images/Kissing-Booth.jpg" alt="movie thumbnail">
-                <p>Kissing Booth</p>
-                </a>
-            </div>
-            <div class="movie">
-                <a href="movie_detail.html">
-                <img src="images/moana.jpeg" alt="movie thumbnail">
-                <p>Moana</p>
-                </a>
-            </div>
-            <div class="movie">
-                <a href="movie_detail.html">
-                <img src="images/spiderman.jpg" alt="movie thumbnail">
-                <p>Spiderman: Far From Home</p>
-                </a>
-            </div>
-            <div class="movie">
-                <a href="movie_detail.html">
-                <img src="images/assassins-creed.jpg" alt="movie thumbnail">
-                <p>Assassins Creed: Rogue</p>
-                </a>
-            </div>
-            <div class="movie">
-                <a href="movie_detail.html">
-                <img src="images/ff9.jpg" alt="movie thumbnail">
-                <p>Fast & Furious 9</p>
-                </a>
-            </div>
-            <div class="movie">
-                <a href="movie_detail.html">
-                <img src="images/justice_league.jpg" alt="movie thumbnail">
-                <p>Zack Synder's Justice League</p>
-                </a>
+    <section>
+        <div class="container">
+            <h2 class="category">Most Viewed Movies</h2>
+            <div class="movie-row">
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/avengers.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Avengers: Endgame</span><span class="movie-rating"><i class="fas fa-star"></i> 10</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/SquidGame.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Squid Game</span><span class="movie-rating"><i class="fas fa-star"></i> 8.5</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/Kissing-Booth.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Kissing Booth</span><span class="movie-rating"><i class="fas fa-star"></i> 9.0</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/moana.jpeg" alt="movie thumbnail">
+                    <p><span class="movie-name">Moana</span><span class="movie-rating"><i class="fas fa-star"></i> 8.5</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/spiderman.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Spiderman: Far From Home</span><span class="movie-rating"><i class="fas fa-star"></i> 10</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/assassins-creed.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Assassins Creed: Rogue</span><span class="movie-rating"><i class="fas fa-star"></i> 6.2</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/ff9.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Fast & Furious 9</span><span class="movie-rating"><i class="fas fa-star"></i> 10</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/justice_league.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Zack Synder's Justice League</span><span class="movie-rating"><i class="fas fa-star"></i> 8.5</span></p>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
 
-    <section class="section-2">
-        <h2 class="category">All Time Rated</h2>
-        <div class="movie-row">
-        <div class="movie">
-            <a href="movie_detail.html">
-            <img src="images/ff9.jpg" alt="movie thumbnail">
-            <p>Fast & Furious 9</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="movie_detail.html">
-            <img src="images/avengers.jpg" alt="movie thumbnail">
-            <p>Avengers: Endgame</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="movie_detail.html">
-            <img src="images/spiderman.jpg" alt="movie thumbnail">
-            <p>Spiderman: Far From Home</p>
-            </a>
-        </div>
-        <div class="movie">
-            <a href="movie_detail.html">
-            <img src="images/justice_league.jpg" alt="movie thumbnail">
-            <p>Zack Synder's Justice League</p>
-            </a>
-        </div>
+    <section>
+        <div class="container">
+            <h2 class="category">All Time Rated</h2>
+            <div class="movie-row">
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/ff9.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Fast & Furious 9</span><span class="movie-rating"><i class="fas fa-star"></i> 10</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/avengers.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Avengers: Endgame</span><span class="movie-rating"><i class="fas fa-star"></i> 10</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/spiderman.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Spiderman: Far From Home</span><span class="movie-rating"><i class="fas fa-star"></i> 10</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/justice_league.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Zack Synder's Justice League</span><span class="movie-rating"><i class="fas fa-star"></i> 8.5</span></p>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
     </main>
@@ -226,11 +222,13 @@
     </button>
 
     <footer>
-        <p>&copy;2021 Legacy Tech. All rights reserved!</p>
+        <div class="container">
+            <p>&copy;2021 Legacy Tech. All rights reserved!</p>
+        </div>
     </footer>
 
 
     <script src="js/all.min.js"></script>
-    <script src="js/myScript1.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Movie Detail | Legacy Tech</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div id="logo-box">
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                </div>
+            
+                <form action="" method="GET" id="search">
+                <input name="text" type="search" placeholder="Search..." class="input">
+                <button id="search-btn"><i class="fa fa-search"></i></button>
+                </form>
+        
+                <ul id="nav-list">
+                    <div id="close">
+                        <i class="fas fa-times fa-2x"></i>
+                    </div>
+                    <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#" style="font-weight: bold;">Login</a></li>
+                    <li id="genre" class="drop-down-box">
+                            <button class="btn">
+                                Genre
+                                <i class="fas fa-caret-down"></i>
+                            </button>
+                            <ul class="sub-list" id="genre-list">
+                                <li class="sub-link"><a href="#">Action</a><hr></li>
+                                <li class="sub-link"><a href="#">Sci-fi</a><hr></li>
+                                <li class="sub-link"><a href="#">Animated</a><hr></li>
+                                <li class="sub-link"><a href="#">Romance</a><hr></li>
+                                <li class="sub-link"><a href="#">Horror</a><hr></li>
+                                <li class="sub-link"><a href="#">Comedy</a><hr></li>
+                                <li class="sub-link"><a href="#">Tragedy</a><hr></li>        
+                            </ul>
+                    </li>
+        
+                    <li id="language" class="drop-down-box">
+                        <button class="btn">
+                            Language
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <ul class="sub-list" id="language-list">
+                            <li class="sub-link"><a href="#">English</a><hr></li>
+                            <li class="sub-link"><a href="#">French</a><hr></li>
+                            <li class="sub-link"><a href="#">Spanish</a><hr></li>
+                            <li class="sub-link"><a href="#">Portugese</a><hr></li>
+                            <li class="sub-link"><a href="#">Korean</a><hr></li>         
+                        </ul>
+                    </li>
+                </ul>
+        
+                <div id="menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+
+            <div id="header-text">
+                <h1><span id="legacy">Legacy</span> Movies</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <section id="movie-section">
+        <div class="container">
+            <h2 style="text-align: center;">Godzilla Vs Kong</h2>
+            <div id="movie-container">
+                <div id="movie-image">
+                    <img src="images/godzilla-vs-king-kong.jpg" alt="Movie poster">
+                </div>
+                <div id="movie-detail">
+                    <p><i class="fas fa-film"></i> Action</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusantium assumenda recusandae, suscipit, totam illo sapiente itaque voluptas officia iure aliquam, repellendus nisi rerum dolorem! Voluptas odit eos nulla sed! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore consequatur consectetur nihil labore tenetur officiis ipsum ex facilis delectus maiores omnis aperiam repellat ipsa, recusandae repellendus reiciendis harum ullam. Illum.</p>
+                    <p>120000 downloads</p>
+                </div>
+            </div>
+            <div id="movie-trailer">
+                <video src="trailers/Godzilla vs. Kong – Official Trailer.mp4" controls>Movie Trailer</video>
+            </div>
+            <div id="movie-download">
+                <h3>download here</h3>
+                <div>
+                    <a href="#" download>Server 1</a>
+                    <a href="#" download>Server 2</a>
+                    <a href="#" download=>Server 3</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="related-movies">
+        <div class="container">
+            <h2 class="category">Related Movies</h2>
+            <div class="movie-row">
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/ff9.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Fast & Furious 9</span><span class="movie-rating"><i class="fas fa-star"></i> 10</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/avengers.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Avengers: Endgame</span><span class="movie-rating"><i class="fas fa-star"></i> 10</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/spiderman.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Spiderman: Far From Home</span><span class="movie-rating"><i class="fas fa-star"></i> 10</span></p>
+                    </a>
+                </div>
+                <div class="movie">
+                    <a href="movie.html">
+                    <img src="images/justice_league.jpg" alt="movie thumbnail">
+                    <p><span class="movie-name">Zack Synder's Justice League</span><span class="movie-rating"><i class="fas fa-star"></i> 8.5</span></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy;2021 Legacy Tech. All rights reserved!</p>
+        </div>
+    </footer>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

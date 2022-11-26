@@ -13,7 +13,6 @@ html {
 
 body {
     font-size: 1.6rem;
-    padding: 0 1.5rem;
     font-family: cursive;
     font-weight: 100;
     background-color: rgba(0, 0, 0, 0.904);
@@ -30,12 +29,42 @@ a:hover {
     text-decoration: none;
 }
 
+.container {
+    margin: 0 5rem;
+}
 
 header {
-    background-color: #333;
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    background:linear-gradient(135deg,
+    rgba(51, 51, 51, 0.8) 0%,
+    rgba(233, 2, 2, 0.8) 100%),
+    url('../images/carousel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    position: relative;
+}
+
+#header-text {
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    right: 25%;
+    bottom: 30%;
+    z-index: 100;
+}
+
+#legacy {
+    color: yellow;
+}
+
+nav {
+    background-color: transparent;
     color: rgba(255, 255, 255, 0.85);
     width: 100%;
-    padding: 1.5rem 2rem; 
+    padding: 1rem 0rem; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +73,7 @@ header {
 
 #logo-box {
     display: inline-block;
-    width: 7rem;
+    width: 6rem;
 }
 
 #logo-box img {
@@ -58,17 +87,19 @@ header {
 #search input {
     margin: 0 0.3rem;
     padding: 0.5rem 1rem;
-    border-radius: 1rem;
+    border-color: #fafafa;
+    border: none;
+    border-bottom: .1rem #fafafada solid;
     box-shadow: none;
     background: transparent;
-    color: #fafafa;
+    color: #fff;
 }
 
 #search-btn {
-padding: .5rem;
-color: #fafafa;
-background-color: #333;
-font-size: 16px;
+    color: #fafafa;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
 }
 
 #nav-list {
@@ -113,6 +144,7 @@ font-size: 16px;
     left: 50%;
     transform: translateX(-50%);
     visibility: hidden;
+    margin-bottom: 1rem;
 }
 
 .sub-list:hover {
@@ -139,8 +171,6 @@ font-size: 16px;
     padding: 0 .5rem;
  }
 
-
-
 #menu {
     display: inline-block;
     position: absolute;
@@ -154,22 +184,8 @@ font-size: 16px;
     padding: 0.3rem;
 }
 
-
-
 section {
-    margin-bottom: 3rem;
-}
-
-.section-1 {
-    width: 100%;
-    height: 70vh;
-    background:linear-gradient(135deg,
-    rgba(51, 51, 51, 0.5) 0%,
-    rgba(26, 17, 17, 0.5) 100%),
-    url('../images/AssassinsCreedIII.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left top;
+    margin: 3rem 0;
 }
 
 .category {
@@ -206,10 +222,34 @@ section {
 .movie p {
     text-transform: capitalize;
     background-color: #333;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: bold;
     max-width: 100%;
-    padding-left: 0.5rem;
+    padding: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie p span {
+    margin: 0 1.5rem;
+}
+
+.movie-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.movie-rating {
+    background-color: black;
+    padding: .2rem;
+    white-space: nowrap;
+}
+
+.movie p .movie-rating .fa-star {
+    color: rgba(255, 255, 0, 0.808);
 }
 
 #btt {
@@ -219,6 +259,64 @@ section {
     top: 80vh;
     right: 2rem;
     visibility: hidden;
+}
+
+#movie-section {
+    padding: 3rem;
+    width: 100%;
+    color: #fafafa;
+    margin: 5rem 0;
+}
+
+#movie-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+
+#movie-container div {
+    display: inline-block;
+    margin: 2rem;
+}
+
+#movie-image img {
+    width: 30rem;
+}
+
+#movie-detail {
+    display: inline-block;
+}
+
+#movie-detail p {
+    font-size: 1.5rem;
+    margin: 3rem 0;
+}
+
+#movie-detail h3 {
+    text-transform: uppercase;
+}
+
+#movie-trailer {
+    margin: 5rem 0;
+    text-align: center;
+}
+
+#movie-trailer video {
+    width: 60%;
+}
+
+#movie-download {
+    text-align: center;
+}
+
+#movie-download div a {
+    margin: 0 2rem;
+    color: blue;
+    text-decoration: underline;
+
 }
 
 footer {
@@ -232,11 +330,8 @@ footer {
 }
 
 
-
-
-
 @media screen and (max-width: 780px) {
-    header {
+    nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -296,16 +391,52 @@ footer {
         display: contents;
     }
 
+    #movie-trailer video {
+        width: 80%;
+    }
+
 }
 
 
 @media screen and (max-width: 450px) {
-    .section-1 { 
-        background:linear-gradient(135deg,
-        rgba(51, 51, 51, 0.5) 0%,
-        rgba(233, 2, 2, 0.5) 100%),
-        url('../images/spiderman.jpg');
-        background-size: cover;
-        background-position: left center;
+    header .container {
+        margin: 0 1rem;
+    }
+
+    #header-text {
+        width: 80%;
+        right: 5rem;
+    }
+
+    #search {
+        display: inline-block;
+        position: relative;
+    }
+    
+    #search input {
+        padding-left: .5rem;
+        padding-right: 3rem;
+    }
+    
+    #search-btn {
+        position: absolute;
+    }
+
+    .movie {
+        width: 100%;
+    }
+
+    #movie-trailer video {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #header-text {
+        right: 3rem;
+    }
+
+    .container {
+        margin: 0 1rem;
     }
 }
